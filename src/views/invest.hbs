@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    {{!-- header --}}
+    {{>header}}
+
+    {{!-- Menu --}}
+   {{>menu}}
+
+            <h1 class="text-green-600 px-4 font-semibold text-xl">{{Message}}</h1>
+            <h1 class="text-red-500 px-4 font-semibold text-xl">{{gMessage}}</h1>
+    {{!-- packages --}}
+    <div class="px-4 py-2 pb-32     space-y-4  ">
+        <p class="text-xl font-bold">REcharge</p>
+                    <div class="flex flex-col space-y-4">
+
+                <p>send money to this number : 0705346176</p>
+                    <input type="text" class="px-4 py-2 border-2 border-pink-900 outline-none" placeholder="enter your ammount">
+                    <button class="bg-pink-900 text-white hover:bg-pink-400 px-4 py-2 ">Submit</button>
+                    </div>
+
+
+    </div>
+
+
+    {{!-- footer --}}
+    {{>footer}}
+
+
+    
+</body>
+
+</html>
